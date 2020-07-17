@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Desafio Semana 1</title>
+</head>
+<body>
+
+  <div class="container">
+    <label for="range-red">
+      <span class="text">(R) Vermelho:</span>
+      <input type="range" id="range-red" min="0" max="255" value="0"/>
+      <input type="text" disabled id="text-red" value="0"/>
+    </label>
+  
+    <label for="range-green">
+      <span class="text">(G) Verde:</span>
+      <input type="range" id="range-green" min="0" max="255" value="0"/>
+      <input type="text" disabled id="text-green"value="0"/>
+    </label>
+  
+    <label for="range-blue">
+      <span class="text">(B) Azul:</span>
+      <input type="range" id="range-blue" min="0" max="255" value="0"/>
+      <input type="text" disabled id="text-blue" value="0"/>
+    </label>
+
+    <div id="color-box">
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
