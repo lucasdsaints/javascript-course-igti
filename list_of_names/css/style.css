@@ -1,0 +1,29 @@
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 2.5px;
+}
+
+.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.delete-button {
+  color: white;
+  font-weight: bold;
+  background-color: darkred;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid darkred;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: tomato;
+}
