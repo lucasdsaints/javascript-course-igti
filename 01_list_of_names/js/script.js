@@ -1,17 +1,15 @@
-window.addEventListener('load', start);
-
-const globalNames = ['Um', 'Dois', 'Três', 'Quatro'];
+let globalNames = ['Um', 'Dois', 'Três', 'Quatro'];
 let inputName = null;
 let isEditing = false;
 let currentIndex = null;
 
-function start() {
+window.addEventListener('load', () => {
   inputName = document.querySelector('#input-name');
   
   preventFormReloadOnSubmit();
   activateInput();
   render();
-}
+});
 
 function preventFormReloadOnSubmit() {
   const form = document.querySelector('form');
@@ -44,7 +42,7 @@ function activateInput() {
 function render() {
   const createDeleteButton = (index) => {
     const deleteName = () => {
-      globalNames.splice(index, 1);
+      globalNames = globalNames.filter((_, idx) => idx !== index);
       render();      
     };
 
