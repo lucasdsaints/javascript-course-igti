@@ -16,15 +16,17 @@
         type="text"
         id="search-bar"
         placeholder="Digite algo para buscar"/>
-      <button id="search-button">Buscar</button>
+      <button id="search-button" onclick="handleSearch()">Buscar</button>
     </div>
 
     <div id="data-container">
-      <div id="users">Nenhum usuário filtrado</div>
-      <div id="statistics">Nada a ser exibido</div>
+      <div id="users"></div>
+      <div id="statistics"></div>
     </div>
   </div>
 
   <div id="loading-page"></div>
+
+  <script defer src="./js/scripts.js"></script>
 </body>
 </html>
